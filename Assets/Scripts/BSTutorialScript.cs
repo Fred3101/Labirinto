@@ -6,6 +6,7 @@ public class BSTutorialScript : MonoBehaviour
     private AudioSource audioSource;
     public MouseLook player; 
     public NarradorController narrador;
+    public SoundTyle audio3;
     private bool touched = false;
     private bool pressedNorte = false;
     private bool pressedSul = false;
@@ -57,6 +58,10 @@ public class BSTutorialScript : MonoBehaviour
             if( narrador.narracaoAtual.isPlaying )
             {
                 narrador.narracaoAtual.Stop();
+            }
+            if( audio3.audioSource.isPlaying )
+            {
+                audio3.audioSource.Stop();
             }
 
             Debug.Log("Direções ativadas, tocando áudio");

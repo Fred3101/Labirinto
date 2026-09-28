@@ -3,7 +3,7 @@ using UnityEngine;
 public class SoundTyle : MonoBehaviour
 {
 
-    private AudioSource audioSource;
+    public AudioSource audioSource;
     public NarradorController narrador;
     public bool isActive = true;
     public bool delay = false;

@@ -383,6 +383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -714,6 +715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -1232,6 +1234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 88804939}
   narrador: {fileID: 330584995}
   isActive: 1
   delay: 1
@@ -1284,6 +1287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -1723,6 +1727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -1946,6 +1951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -2169,6 +2175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -2674,6 +2681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 741271016}
   narrador: {fileID: 330584995}
+  audio3: {fileID: 88804944}
   narraController: {fileID: 330584995}
   narraCode: 3
 --- !u!114 &228692711
@@ -2738,6 +2746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -3774,7 +3783,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: f70688d959fb73845a1aa39589c1317c, type: 3}
+  m_Resource: {fileID: 8300000, guid: 50c90788d5dff23429adacbded99fe76, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -3968,7 +3977,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 17d5bd3064417934699558800d5ca099, type: 3}
+  m_Resource: {fileID: 8300000, guid: 44131e6fce257d04b9e50d62abb0486d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -4065,7 +4074,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 43a995b072650b548b5caa942dd77276, type: 3}
+  m_Resource: {fileID: 8300000, guid: 115fd34a37b066641a352945d386e944, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -4514,6 +4523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -5012,6 +5022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -5235,6 +5246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -6556,6 +6568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -6779,6 +6792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -7404,6 +7418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -7988,6 +8003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -8226,6 +8242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -8557,6 +8574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -8780,6 +8798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -9003,6 +9022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -9334,6 +9354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -9618,6 +9639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -10291,6 +10313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -10852,7 +10875,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: f70688d959fb73845a1aa39589c1317c, type: 3}
+  m_Resource: {fileID: 8300000, guid: 50c90788d5dff23429adacbded99fe76, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -11202,6 +11225,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -11641,6 +11665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -12048,6 +12073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -12271,6 +12297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -12494,6 +12521,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -12929,8 +12957,8 @@ Transform:
   m_GameObject: {fileID: 2002878116}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.3268855, y: -0.93806636, z: 9.301161}
-  m_LocalScale: {x: 0.5, y: 1, z: 0.3}
+  m_LocalPosition: {x: -3.3268855, y: -0.93806636, z: 8.801161}
+  m_LocalScale: {x: 0.5, y: 1, z: 0.39999002}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 340403148}
@@ -12947,6 +12975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
@@ -13278,6 +13307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a75a34ed617eb704fa9c933b288bf11c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
   narrador: {fileID: 0}
   isActive: 1
   delay: 0
