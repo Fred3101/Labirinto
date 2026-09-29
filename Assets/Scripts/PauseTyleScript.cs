@@ -6,6 +6,7 @@ public class PauseTyleScript : MonoBehaviour
     public MouseLook player; 
     public NarradorController narrador;
     public bool isActive = true;
+    public bool ending = false;
     private bool hasTriggered = false;
     private bool audioHasPlayed = false;
 
@@ -17,6 +18,7 @@ public class PauseTyleScript : MonoBehaviour
 
     void Update()
     {
+        // Detectando fim do audio:
         if (audioHasPlayed && !audioSource.isPlaying && !hasTriggered)
         {
             hasTriggered = true;
@@ -25,6 +27,14 @@ public class PauseTyleScript : MonoBehaviour
             if (gameObject.CompareTag("Desativável"))
             {
                 enabled = false;
+            }
+
+            if (ending) {
+                Application.Quit();
+
+                #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+                #endif
             }
         }
 
