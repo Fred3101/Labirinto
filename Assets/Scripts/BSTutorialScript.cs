@@ -68,8 +68,6 @@ public class BSTutorialScript : MonoBehaviour
             audioSource.Play();
             narraController.narracaoAtual = narraController.narracoes[narraCode];
             audioHasPlayed = true;
-
-            player.canLook = true;
         }
 
         if (audioHasPlayed && !audioSource.isPlaying && !hasTriggered)

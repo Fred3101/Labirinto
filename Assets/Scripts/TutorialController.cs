@@ -14,7 +14,6 @@ public class TutorialController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
 
         player.canComand = false;
-        player.canLook = false;
         player.canMove = false;
 
     }

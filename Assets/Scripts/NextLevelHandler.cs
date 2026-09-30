@@ -25,16 +25,5 @@ public class NextLevelHandler : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.CompareTag("Player"))
-        {
-            respawn.tyleDesativavelA = stFlag01;
-            respawn.tyleDesativavelB = stFlag02;
-            respawn.tyleDesativavelC = stFlag03;
-            respawn.narrDesativavelA = narrFlag01;
-            respawn.narrDesativavelB = narrFlag02;
-            respawn.narrDesativavelC = narrFlag03;
-        }
-    }
+    
 }

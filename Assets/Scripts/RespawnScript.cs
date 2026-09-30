@@ -10,17 +10,6 @@ public class RespawnScript : MonoBehaviour
     private MouseLook player;
 
     public NarradorController narrador;
-
-    public SoundTyle tyleDesativavelA;
-    public SoundTyle tyleDesativavelB;
-    public SoundTyle tyleDesativavelC;
-    public SoundTyle tyleDesativavelD;
-    public NarracaoUpdate narrDesativavelA;
-    public NarracaoUpdate narrDesativavelB;
-    public NarracaoUpdate narrDesativavelC;
-    public NarracaoUpdate narrDesativavelD;
-
-    public bool reativarFlags = true;
     
     void Start()
     {
@@ -41,11 +30,6 @@ public class RespawnScript : MonoBehaviour
                 Debug.LogWarning("alvo não é nulo, tp solicitado");
 
                 Retornar();
-
-                if (reativarFlags)
-                {
-                    Reativar();
-                }
 
                 if (narrador.narracaoAtual.isPlaying)
                 {
@@ -72,56 +56,12 @@ public class RespawnScript : MonoBehaviour
         transform.position = spawnpoint.position;
         transform.rotation = spawnpoint.rotation;
 
-        MouseLook mouseLook = GetComponent<MouseLook>();
-        if (mouseLook != null)
-        {
-            float anguloY = spawnpoint.eulerAngles.y;
-            mouseLook.RedefineRotation(anguloY);
-        }
-
         if (charac != null) 
         {
             charac.enabled = true;
         }
     
         Debug.Log("Teleportado");
-    }
-
-    void Reativar()
-    {
-        if (tyleDesativavelA.isActive == false) 
-        {
-            tyleDesativavelA.isActive = true;
-        }
-        if (tyleDesativavelB.isActive == false) 
-        {
-            tyleDesativavelB.isActive = true;
-        }
-        if (tyleDesativavelC.isActive == false) 
-        {
-            tyleDesativavelC.isActive = true;
-        }
-        if (tyleDesativavelD.isActive == false) 
-        {
-            tyleDesativavelD.isActive = true;
-        }
-
-        if (narrDesativavelA.isActive == false) 
-        {
-            narrDesativavelA.isActive = true;
-        }
-        if (narrDesativavelB.isActive == false) 
-        {
-            narrDesativavelB.isActive = true;
-        }
-        if (narrDesativavelC.isActive == false) 
-        {
-            narrDesativavelC.isActive = true;
-        }
-        if (narrDesativavelD.isActive == false) 
-        {
-            narrDesativavelD.isActive = true;
-        }
     }
 
 }

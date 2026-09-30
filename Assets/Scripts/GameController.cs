@@ -13,7 +13,6 @@ public class GameController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
 
         player.canComand = false;
-        player.canLook = false;
         player.canMove = false;
     }
 
@@ -24,7 +23,6 @@ public class GameController : MonoBehaviour
         {
             hasTriggered = true;
             player.canMove = true;
-            player.canLook = true;
             player.canComand = true;
             enabled = false;
         }
@@ -34,7 +32,6 @@ public class GameController : MonoBehaviour
             hasTriggered = true;
             player.canMove = true;
             player.canComand = true;
-            player.canLook = true;
             audioSource.Stop();
             enabled = false;
         }
