@@ -5,7 +5,9 @@ public class CalculoHandlerScript : MonoBehaviour
 {
 
     [SerializeField] private TMP_InputField numberInputField;
+    [SerializeField] public AudioClip rewardAudio;
     public MenuPauseScript menuPause;
+    public AudioManager audioManager;
     public int resultado;
 
     private void OnEnable()
@@ -33,6 +35,9 @@ public class CalculoHandlerScript : MonoBehaviour
                 menuPause.RetomarJogo();
 
                 // play audio
+                audioManager.AtualizarSom(rewardAudio);
+                audioManager.TocarSom();
+
             } 
             else
             {
