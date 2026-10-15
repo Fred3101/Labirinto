@@ -10,9 +10,9 @@ public class ChallengeTriggerScript : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (isActive) {
-            // Ativar menu de resposta
             if(other.CompareTag("Player"))
             {
+                // Ativar menu de resposta
                 calculoHandler.resultado = newResultado;
                 menuPause.PausarJogo();
                 // desativa-se

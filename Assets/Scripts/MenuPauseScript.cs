@@ -7,7 +7,7 @@ public class MenuPauseScript : MonoBehaviour
 
     void Start()
     {
-        PausarJogo();
+        RetomarJogo();
     }
 
     public void PausarJogo()

@@ -8,8 +8,6 @@ public class RespawnScript : MonoBehaviour
     private CharacterController charac;
     private AudioSource respawnSound;
     private MouseLook player;
-
-    public NarradorController narrador;
     
     void Start()
     {
@@ -31,12 +29,7 @@ public class RespawnScript : MonoBehaviour
 
                 Retornar();
 
-                if (narrador.narracaoAtual.isPlaying)
-                {
-                    narrador.narracaoAtual.Stop();
-                }
                 respawnSound.Play();
-                // fazer ele costrar narracao tb
 
             }
             else

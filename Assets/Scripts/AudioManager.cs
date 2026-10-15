@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
@@ -30,6 +31,32 @@ public class AudioManager : MonoBehaviour
         {
             Debug.LogWarning("Nenhum AudioClip foi definido no AudioManager!");
         }
+    }
+
+    public void TocarAudioInicialDepois(
+        AudioSource audioSourceInicial,
+        AudioClip audioInicial,
+        AudioClip audioSeguinte)
+    {
+        if (audioSourceInicial == null || audioInicial == null || audioSeguinte == null)
+        {
+            Debug.LogError("AudioManager precisa de um AudioSource e dos dois AudioClips configurados.", this);
+            return;
+        }
+
+        StartCoroutine(TocarAudioInicialDepoisCoroutine(audioSourceInicial, audioInicial, audioSeguinte));
+    }
+
+    private IEnumerator TocarAudioInicialDepoisCoroutine(
+        AudioSource audioSourceInicial,
+        AudioClip audioInicial,
+        AudioClip audioSeguinte)
+    {
+        audioSourceInicial.PlayOneShot(audioInicial);
+        yield return new WaitWhile(() => audioSourceInicial.isPlaying);
+
+        AtualizarSom(audioSeguinte);
+        TocarSom();
     }
 
     // ATUALIZAÇÃO: Método para trocar o som atual do sistema em momentos específicos
