@@ -7,8 +7,8 @@ public class PlayerAudioController : MonoBehaviour
 
     void Update()
     {
-        // Comando: Sempre que o jogador apertar a tecla "E", repete o áudio
-        if (Input.GetKeyDown(KeyCode.E))
+        // Comando: Sempre que o jogador apertar a tecla "X", repete o áudio
+        if (Input.GetKeyDown(KeyCode.X))
         {
             audioManager.TocarSom();
         }

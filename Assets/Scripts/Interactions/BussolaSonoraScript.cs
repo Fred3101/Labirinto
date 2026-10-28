@@ -9,7 +9,7 @@ public class BussolaSonoraScript : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q) && !sequenciaTocando)
+        if (Input.GetKeyDown(KeyCode.Z) && !sequenciaTocando)
         {
             sequenciaTocando = true;
             StartCoroutine(PlaySpatialSequence());

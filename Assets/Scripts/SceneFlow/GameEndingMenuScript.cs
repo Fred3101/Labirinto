@@ -6,11 +6,18 @@ public class GameEndingMenuScript : MonoBehaviour
     private const string TutorialSceneName = "TutorialScene";
 
     [SerializeField] private GameObject endingCanvas;
+    [SerializeField] private AudioClip finalNarracao;
 
+    private AudioSource narrationAudioSource;
     private bool isOpen;
 
     private void Awake()
     {
+        narrationAudioSource = gameObject.AddComponent<AudioSource>();
+        narrationAudioSource.playOnAwake = false;
+        narrationAudioSource.loop = false;
+        narrationAudioSource.spatialBlend = 0f;
+
         if (endingCanvas == null)
         {
             Debug.LogError("Configure o canvas de encerramento no GameEndingMenuScript.", this);
@@ -45,6 +52,15 @@ public class GameEndingMenuScript : MonoBehaviour
         endingCanvas.SetActive(true);
         Time.timeScale = 0f;
         Cursor.visible = true;
+
+        if (finalNarracao == null)
+        {
+            Debug.LogError("Configure o áudio FinalNarracao no GameEndingMenuScript.", this);
+        }
+        else
+        {
+            AudioPlaybackCoordinator.PlayOneShot(narrationAudioSource, finalNarracao);
+        }
 
         Canvas canvas = endingCanvas.GetComponent<Canvas>();
         if (canvas != null)
