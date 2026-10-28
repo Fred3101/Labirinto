@@ -80,6 +80,9 @@ public class CalculoHandlerScript : MonoBehaviour
             else
             {
                 Debug.LogWarning("Resposta errada, tente de novo");
+                achievementsRegisterScript registroConquistas =
+                    FindFirstObjectByType<achievementsRegisterScript>();
+                registroConquistas?.RegistrarErroCalculo();
                 audioManager.TocarAudio(incorrectAnswerAudio);
             }
         }

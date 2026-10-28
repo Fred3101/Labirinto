@@ -1,6 +1,8 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[RequireComponent(typeof(AudioSource))]
 public class SceneSwitch : MonoBehaviour
 {
     
@@ -21,13 +23,36 @@ public class SceneSwitch : MonoBehaviour
         {
             hasTriggered = true;
             Debug.Log("Mudando de fase");
-            SceneManager.LoadScene(sceneToLoad);
+            StartCoroutine(CarregarFaseAposAudioDeConquista());
         }
+    }
+
+    private IEnumerator CarregarFaseAposAudioDeConquista()
+    {
+        achievementsRegisterScript registroConquistas =
+            FindFirstObjectByType<achievementsRegisterScript>();
+
+        if (registroConquistas == null)
+        {
+            Debug.LogError("Configure um achievementsRegisterScript ativo na fase.", this);
+        }
+        else
+        {
+            AudioClip audioConquista = registroConquistas.ObterAudioConquista();
+            if (audioConquista != null)
+            {
+                AudioPlaybackCoordinator.PlayOneShot(audioSource, audioConquista);
+                yield return new WaitWhile(() => audioSource.isPlaying);
+            }
+        }
+
+        yield return new WaitForSecondsRealtime(2f);
+        SceneManager.LoadScene(sceneToLoad);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player") && !hasTriggered)
+        if (other.CompareTag("Player") && !audioHasPlayed && !hasTriggered)
         {
 
             player.canMove = false;

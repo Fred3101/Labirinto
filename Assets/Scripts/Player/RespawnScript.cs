@@ -27,6 +27,10 @@ public class RespawnScript : MonoBehaviour
             {
                 Debug.LogWarning("alvo não é nulo, tp solicitado");
 
+                achievementsRegisterScript registroConquistas =
+                    FindFirstObjectByType<achievementsRegisterScript>();
+                registroConquistas?.RegistrarUsoRespawn();
+
                 Retornar();
 
                 AudioPlaybackCoordinator.Play(respawnSound);

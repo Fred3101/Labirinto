@@ -33,7 +33,7 @@ public class GameEndingTyleScript : MonoBehaviour
         if (endingAudio == null)
         {
             Debug.LogError("Configure o dingle de vitória no GameEndingTyleScript.", this);
-            endingMenu.Abrir();
+            StartCoroutine(endingMenu.AbrirAposAudioDeConquista(audioSource));
             return;
         }
 
@@ -44,6 +44,6 @@ public class GameEndingTyleScript : MonoBehaviour
     private IEnumerator AbrirMenuAposDingle()
     {
         yield return new WaitWhile(() => audioSource.isPlaying);
-        endingMenu.Abrir();
+        yield return endingMenu.AbrirAposAudioDeConquista(audioSource);
     }
 }

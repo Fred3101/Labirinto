@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -86,6 +87,32 @@ public class GameEndingMenuScript : MonoBehaviour
 
             behaviour.enabled = false;
         }
+    }
+
+    public IEnumerator AbrirAposAudioDeConquista(AudioSource audioSourceVitoria)
+    {
+        achievementsRegisterScript registroConquistas =
+            FindFirstObjectByType<achievementsRegisterScript>();
+
+        if (registroConquistas == null)
+        {
+            Debug.LogError("Configure um achievementsRegisterScript ativo na fase.", this);
+        }
+        else if (audioSourceVitoria == null)
+        {
+            Debug.LogError("Configure um AudioSource de vitória para tocar o áudio da conquista.", this);
+        }
+        else
+        {
+            AudioClip audioConquista = registroConquistas.ObterAudioConquista();
+            if (audioConquista != null)
+            {
+                AudioPlaybackCoordinator.PlayOneShot(audioSourceVitoria, audioConquista);
+                yield return new WaitWhile(() => audioSourceVitoria.isPlaying);
+            }
+        }
+
+        Abrir();
     }
 
     private void ReiniciarTutorial()
